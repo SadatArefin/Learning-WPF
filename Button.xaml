@@ -14,20 +14,19 @@
     </Button.Content>
     
     <Button.Resources>
-        
+
         <Style TargetType="Button" xaml:Key="button">
-            <Setter Property="Foreground" Value="Blue" />
             <Setter Property="Background">
                 <Setter.Value>
                     <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
                         <LinearGradientBrush.GradientStops>
-                            <GradientStop Offset="0.0" Color="#90DDDD" />
-                            <GradientStop Offset="1.0" Color="#5BFFFF" />
+                            <GradientStop Offset="0.0" Color="#FF55BB" />
+                            <GradientStop Offset="1.0" Color="#BBFF55" />
                         </LinearGradientBrush.GradientStops>
                     </LinearGradientBrush>
                 </Setter.Value>
             </Setter>
-            <Setter Property="BorderBrush" Value="Red"/>
+            <Setter Property="BorderBrush" Value="Blue"/>
             <Setter Property="BorderThickness" Value="5"/>
             <Setter Property="Cursor" Value="Cross" />
             <Style.Triggers>

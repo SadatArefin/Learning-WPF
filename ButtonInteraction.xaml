@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfSampleApplication.ButtonInteraction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSampleApplication"
+        mc:Ignorable="d"
+        Title="ButtonInteraction" Height="450" Width="900">
+    <Window.Resources>
+        <Style TargetType="Border" x:Key="rounded">
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+        <Button Name="btn1" Background="Pink" 
+        BorderBrush="Black" BorderThickness="1" 
+        Click="OnClick1" ClickMode="Hover" Margin="100 0 100 0" Padding="10 20 10 20" >
+            Hover to Change
+        </Button>
+
+            <Button Name="btn2" Background="LightBlue" 
+        BorderBrush="Black" BorderThickness="1" 
+        Click="OnClick2" ClickMode="Press" Margin="100 0 100 0" Padding="10 20 10 20">
+                Click to Change
+        </Button>
+
+        <Button Name="btn3" 
+        Click="OnClick3" ClickMode="Release" Margin="100 0 100 0" Padding="10 20 10 20">
+            Release to Reset
+        </Button>
+        </StackPanel>
+    </Grid>
+</Window>
